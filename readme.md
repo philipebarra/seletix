@@ -8,26 +8,26 @@ new Seletix('id_element', options);
 
 ### Options
 Options avaiable:
-- delay:
+- **delay**:
  Amout of time in miliseconds to wait before search.
 Every time a user enter a new letter with a keybord this time starts again. This prevent search on every letter wrote by user. Default: 400
 
-- limit:
+- **limit**:
 Max of results to show.
 Default is 10.
 
-- minLength:
+- **minLength**:
 Minimum of characters to start filter results.
 Default is 2
 
-- showCaret: 
+- **showCaret**: 
 If is true the icon caret will be shown in the right conner of input.
 Default: true
 
-- source:
+- **source**:
 You can use a url string
 ```js
-new Selectix('movies', {
+new Seletix('movies', {
     source: 'http://yoursite.com/resource-example'
 });
 ```
@@ -35,7 +35,7 @@ new Selectix('movies', {
 Or you can use a function that return an array with objects
 
 ```js
-new Selectix('movies', {
+new Seletix('movies', {
     source: function() {
         return [
             {id: 1, label:'Movie 1'},
